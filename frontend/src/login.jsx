@@ -1,48 +1,6 @@
-// // Login.jsx
-// import React, { useState } from 'react';
-// import './style.css'; // Adjust the path as needed
-
-
-// const Login = ({ onLogin }) => {
-//     const [username, setUsername] = useState('');
-//     const [password, setPassword] = useState('');
-
-//     const handleSubmit = (event) => {
-//         event.preventDefault();
-//         // Implement your login logic here
-//         // For now, we'll just call onLogin with the username and password
-//         onLogin(username, password);
-//     };
-
-//     return (
-//         <div className="login-container">
-//             <form className="login-form" onSubmit={handleSubmit}>
-//                 <h2>Login to Your Account</h2>
-//                 <div className="form-control">
-//                     <label htmlFor="username">Username</label>
-//                     <input type="text" id="username" name="username" required value={username} onChange={(e) => setUsername(e.target.value)} />
-//                 </div>
-//                 <div className="form-control">
-//                     <label htmlFor="password">Password</label>
-//                     <input type="password" id="password" name="password" required value={password} onChange={(e) => setPassword(e.target.value)} />
-//                 </div>
-//                 <button type="submit">Login</button>
-//             </form>
-//         </div>
-//     );
-// };
-
-// export default Login;
-
-
-
-
-
-
-
-
 import React, { useState } from 'react';
 import './style.css'; // Adjust the path as needed
+
 
 const Login = ({ onLogin }) => {
     const [isLoginForm, setIsLoginForm] = useState(true);
